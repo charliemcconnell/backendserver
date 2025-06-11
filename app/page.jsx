@@ -6,7 +6,7 @@ export default function Home() {
   const [data, setData] = useState();
   
   const send = () => {
-    fetch("/api/handleCalendaravail", {
+    fetch("https://backendserver-mauve.vercel.app/api/handleCalendaravail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
