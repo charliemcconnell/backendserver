@@ -1,6 +1,6 @@
 export async function POST(request) {
-    const body = await request.json();
-    console.log(body);
+    // const body = await request.json();
+    console.log(request);
     // let busydatesforworker1 = body.busydatesforworker1;
     // let busydatesforworker2 = body.busydatesforworker2;
     // let desiredDate = body.desiredDate;
