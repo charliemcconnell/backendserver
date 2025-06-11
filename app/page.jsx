@@ -11,41 +11,9 @@ export default function Home() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-
-        "busydatesforworker1": {
-
-          "busy": [
-            {
-              "start": "2025-06-12T13:00:00.000Z",
-              "end": "2025-06-12T13:30:00.000Z"
-            },
-            {
-              "start": "2025-06-12T16:00:00.000Z",
-              "end": "2025-06-12T17:00:00.000Z"
-            }
-          ]
-
-        },
-        "busydatesforworker2": {
-
-          "busy": [
-            {
-              "start": "2025-06-12T13:00:00.000Z",
-              "end": "2025-06-12T13:30:00.000Z"
-            },
-            {
-              "start": "2025-06-12T16:00:00.000Z",
-              "end": "2025-06-12T16:30:00.000Z"
-            }
-          ]
-
-
-        },
-        "desiredDate": "2025-06-12T13:00:00.000Z",
-        "endDate": "2025-06-15T17:00:00.000Z",
-        "day": "sunday"
-      }),
+      body: JSON.stringify(
+        {"data": "{\n \"busydatesforworker1\": {\n \"busy\": 2025-06-12T13:00:00.000Z, 2025-06-12T16:00:00.000Z\n },\n \"busydatesforworker2\": {\n \"busy\": 2025-06-12T13:00:00.000Z, 2025-06-12T16:00:00.000Z\n\n },\n \"desiredDate\": 2025-06-12T13:00:00.000Z,\n \"endDate\": 2025-06-15T13:00:00.000Z,\n \"day\": Monday\n }"},
+      ),
     })
       .then((response) => response.json()
     )
